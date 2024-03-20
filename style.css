@@ -1,0 +1,528 @@
+/*NAV*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;;
+}
+
+/*NAV BAR*/
+/* ===== Colours ===== */
+:root{
+    --body-color: white;
+    --nav-color: black;
+    --side-nav: #010718;
+    --text-color: white;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--body-color);
+    overflow-x: hidden;
+}
+
+body.dark{
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #CCC;
+    --search-bar: #242526;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color); 
+}
+
+body.dark nav{
+    border: 1px solid #393838;
+
+}
+nav .nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 0px 1px black;
+    height: 100%;
+    width: 100%;
+}
+
+nav .nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+}
+
+nav .nav-menu a:hover{
+    text-decoration: underline;
+}
+
+a:any-link{
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-logo{
+    margin: 20px;
+    font-weight: 600;
+    font-size: 20px;
+} 
+
+.kosar-icon{
+    width: 26px;
+    margin: 3%;
+}
+
+/*HERO 1*/
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-image: url(./kepek/shop.png);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.hero-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.hero-img img{
+    width: 500px;
+    box-shadow: 1px 1px 1px 8px rgb(4, 1, 1);
+    border-radius: 50px;
+}
+
+.hero-txt h4{
+    color: black;
+    font-size: 30px;
+}
+
+.about-btn{
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.about-btn:hover{
+    border: 1px dashed black;
+}
+
+.about-btn a{
+    padding: 10px;
+    color: black;
+}
+
+/*Section 2*/
+
+.section_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.section_2 h3{
+    font-size: 25px;
+    opacity: 0.7;
+    border-bottom: 2px solid black;
+}
+
+.cards-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 100px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.cards-cont img{
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.cards-cont h5{
+    text-align: center;
+    width: 200px;
+    font-size: 15px;
+}
+
+/*VALASZTO*/
+
+.valaszto{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.valaszto h3{
+    color: rgb(153, 153, 153);
+}
+
+/*Section 3*/
+
+.section_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.item-row{
+    padding: 25px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px 3px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-row:hover{
+    padding: 25px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px 3px rgb(193, 193, 193);
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-row2{
+    padding: 25px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px 3px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-row2:hover{
+    padding: 25px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px 3px rgb(193, 193, 193);
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-part{
+    width: 300px;
+}
+
+.desc_part{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.desc_part h4{
+    font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.more-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.more-btn:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px dashed black;
+    cursor: pointer;
+    align-items: center;
+}
+
+.more-btn a{
+    color: black;
+    padding: 5  px;
+}
+
+/*VILAGITOS*/
+.item-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.item-list-title{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    
+}
+
+.shop-desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.shop-desc h2{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.shop-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.item-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.item-card img{
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.item-card h4{
+    margin: 10px;
+}
+
+.buy-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buy-btn:hover{
+    border: 1px dashed black;
+}
+
+.buy-btn h5{
+    padding: 10px;
+}
+
+/*VALASZTO2*/
+
+.valaszto2{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.valaszto2 h3{
+    color: rgb(153, 153, 153);
+}
+
+/*Mobil*/
+
+@media (max-width: 790px) {
+    .cards-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 1000px;
+        margin-top: 50px;
+        border: 1px solid black;
+    }
+
+    nav .nav-menu{
+        display: none;
+    }
+
+    .hero-img img{
+        display: none   ;
+        width: 500px;
+        box-shadow: 0px 0px 0px 2px rgb(4, 1, 1);
+        border-radius: 50px;
+    }
+
+    .hero-txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .hero-cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 3%;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .item-row{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .item-row2{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .item-row:hover{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .item-row2:hover{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+
+    .shop-row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .item-list-title{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid black;
+        border-radius: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    
+        
+    }
+}
